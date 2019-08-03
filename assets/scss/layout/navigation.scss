@@ -1,0 +1,199 @@
+  /* header */
+
+  .header {
+      background-color: white;
+      position: absolute;
+      width: 100%;
+      z-index: 3;
+  }
+
+  .header ul {
+      margin-top: 15px;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      background-color: white;
+  }
+
+  .header li a:hover,
+  .header .menu-btn:hover {
+      background-color: $smokyblack;
+      color: white;
+  }
+
+  .header .navbar-brand {
+      display: block;
+      float: left;
+      padding: 0;
+      text-decoration: none;
+  }
+
+  /* menu */
+
+  .header .menu {
+      //   clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+  }
+
+  /* menu icon */
+
+  .header .menu-icon {
+      cursor: pointer;
+      float: right;
+      padding: 40px 30px;
+      position: relative;
+      user-select: none;
+  }
+
+  .header .menu-icon .navicon {
+      background: $smokyblack;
+      display: block;
+      height: 3px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 22px;
+  }
+
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+      background: $smokyblack;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .1s ease-out;
+      width: 100%;
+  }
+
+  .header .menu-icon .navicon:before {
+      top: 5px;
+  }
+
+  .header .menu-icon .navicon:after {
+      top: -5px;
+  }
+
+  /* menu btn */
+
+  .header .menu-btn {
+      display: none;
+  }
+
+  .header .menu-btn:checked~.menu {
+      max-height: 240px;
+  }
+
+  .header .menu-btn:checked~.menu-icon .navicon {
+      background: transparent;
+  }
+
+  .navbar .menu-btn:checked~.menu-icon .navicon:before {
+      transform: rotate(-45deg);
+  }
+
+  .header .menu-btn:checked~.menu-icon .navicon:after {
+      transform: rotate(45deg);
+  }
+
+  .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+      top: 0;
+  }
+
+  /* 48em = 768px */
+
+  @media (min-width: 48em) {
+      .header li {
+          float: left;
+      }
+
+      .header li a {
+          padding: 20px 30px;
+      }
+
+      .header .menu {
+          clear: none;
+          float: right;
+          max-height: none;
+      }
+
+      .header .menu-icon {
+          display: none;
+      }
+  }
+
+  .section1 {
+      top: 90px;
+      z-index: 2;
+      display: inline-block;
+  }
+
+  .textoprincipal {
+      top: 90px;
+      z-index: 2;
+      padding: 5rem 5rem 5rem 5rem;
+      background-color: white;
+      width: 120%;
+      display: inline-block;
+      position: relative;
+  }
+
+  .parrafo {
+      z-index: 2;
+      padding-right: 0rem;
+      margin-bottom: 2rem;
+  }
+
+  .newsletter {
+      z-index: 2;
+      top: 90px;
+      background-color: $smokyblack;
+      color: white;
+      padding: 5rem;
+      position: relative;
+      height: 80%;
+      width: 120%;
+
+
+  }
+
+  .formatocorreo {
+      font-family: $OldStandar;
+      margin-top: 1rem;
+      // padding-right: 8rem;
+      background-color: $smokyblack;
+      display: inline-block;
+      width: 100%;
+      border-radius: 0;
+
+  }
+
+  .textonews {
+      margin: 0;
+  }
+
+  .suscribir {
+      font-family: $OldStandar;
+      background-color: white;
+      // padding: 1rem 2rem;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 50px;
+      height: 100%;
+      text-align: center;
+      writing-mode: vertical-rl;
+      padding: 0;
+
+  }
+
+  #exampleInputEmail1 {
+      font-family: $Raleway;
+
+  }
+
+  a {
+      color: $smokyblack;
+  }

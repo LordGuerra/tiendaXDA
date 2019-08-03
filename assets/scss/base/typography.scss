@@ -1,0 +1,33 @@
+h1 {
+    font-size: $xxx-large;
+    font-family: $OldStandar;
+    color: $smokyblack;
+    font-weight: $bold;
+    text-align: left;
+}
+
+
+h3 {
+    font-family: $OldStandar;
+    font-weight: $regular;
+    font-size: $xx-large;
+    color: $white;
+}
+
+h4 {
+    font-family: $OldStandar;
+    font-weight: $bold;
+    font-size: $x-large;
+    color: $smokyblack;
+    position: relative;
+    left: 10px;
+}
+
+p {
+    font-family: $Raleway;
+    font-weight: $regular;
+    color: $granitegray;
+    letter-spacing: 1px;
+    text-justify: auto;
+
+}
